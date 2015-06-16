@@ -2,9 +2,24 @@
 <html>
 <head>
     <title>We are logging you on</title>
+    <style>
+        img.logo {
+            margin: 2em auto 0 auto; width:200px;display:block
+        }
+        img.loading {
+            margin: 2em auto 0 auto; width:128px;display:block
+        }
+         p {
+             text-align: center;
+             font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+         }
+    </style>
 </head>
 <body>
+
+    <img class="logo" src="{rootUrl}/assets/img.dayinsure-logo.png" />
     <p>We are logging you in. Please wait...</p>
+    <img class="loading" src="{rootUrl}/assets/img.loading.gif" />
     <form method="post" action="{redirect_uri}">
         {fields}
     </form>
